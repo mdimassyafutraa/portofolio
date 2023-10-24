@@ -10,7 +10,7 @@ module.exports = {
       colors: {
         hitamBg: '#020617',
         hitamPages: '#0f172a',
-        biru: '#00b8ff',
+        biru: '#0369a1',
       },
       screens: {
         '2xl': '1320px',

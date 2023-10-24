@@ -7,6 +7,13 @@ humberger.addEventListener('click', function () {
   navMenu.classList.toggle('hidden');
 });
 
+document.addEventListener('click', function (event) {
+  if (!navMenu.contains(event.target) && event.target !== humberger) {
+    humberger.classList.remove('humberger-active');
+    navMenu.classList.add('hidden');
+  }
+});
+
 // Nav
 window.addEventListener('scroll', function () {
   var nav = document.querySelector('nav');

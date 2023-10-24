@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>M Dimas Syafutra</title>
+
+    <!-- CSS Tailwind -->
     <link rel="stylesheet" href="public/tailwind.css" />
+
+    <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   </head>
-  <body class="bg-hitamBg text-slate-300">
+  <body class="bg-hitamBg text-gray-300">
     <!-- Header Start -->
     <nav class="absolute top-0 left-0 w-full">
       <!-- Brand -->
@@ -28,28 +37,28 @@
           </button>
         </div>
         <!-- Desktop Menu Links -->
-        <div id="nav-menu" class="hidden w-full md:block md:w-auto md:mt-0 md:bg-transparent bg-white bg-opacity-5 rounded-xl overflow-hidden mt-6">
+        <div id="nav-menu" class="hidden w-full md:block md:w-auto md:mt-0 md:bg-transparent bg-hitamPages bg-opacity-90 rounded-xl overflow-hidden mt-6">
           <ul class="text-center font-medium flex flex-col p-4 md:p-0 mt-4 rounded-xl md:flex-row md:space-x-8 md:mt-0 md:border-0">
             <li>
-              <a href="#home" class="block relative p-4 pl-3 pr-4 font-semibold overflow-hidden group md:hover:bg-transparent md:hover:text-biru rounded-full md:hover:scale-110 transition-transform duration-300">
+              <a href="#home" class="block relative p-4 pl-3 pr-4 font-bold overflow-hidden group md:hover:bg-transparent md:hover:text-biru rounded-full md:hover:scale-110 transition-transform duration-300">
                 Home
                 <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-biru transform translate-x-full transition-transform duration-300 group-hover:translate-x-0 md:bg-none"></div>
               </a>
             </li>
             <li>
-              <a href="#about" class="block relative p-4 pl-3 pr-4 font-semibold overflow-hidden group md:hover:bg-transparent md:hover:text-biru rounded-full md:hover:scale-110 transition-transform duration-300">
+              <a href="#about" class="block relative p-4 pl-3 pr-4 font-bold overflow-hidden group md:hover:bg-transparent md:hover:text-biru rounded-full md:hover:scale-110 transition-transform duration-300">
                 About
                 <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-biru transform translate-x-full transition-transform duration-300 group-hover:translate-x-0 md:bg-none"></div>
               </a>
             </li>
             <li>
-              <a href="#" class="block relative p-4 pl-3 pr-4 font-semibold overflow-hidden group md:hover:bg-transparent md:hover:text-biru rounded-full md:hover:scale-110 transition-transform duration-300">
+              <a href="#" class="block relative p-4 pl-3 pr-4 font-bold overflow-hidden group md:hover:bg-transparent md:hover:text-biru rounded-full md:hover:scale-110 transition-transform duration-300">
                 Portofolio
                 <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-biru transform translate-x-full transition-transform duration-300 group-hover:translate-x-0 md:bg-none"></div>
               </a>
             </li>
             <li>
-              <a href="#" class="block relative p-4 pl-3 pr-4 font-semibold overflow-hidden group md:hover:bg-transparent md:hover:text-biru rounded-full md:hover:scale-110 transition-transform duration-300">
+              <a href="#" class="block relative p-4 pl-3 pr-4 font-bold overflow-hidden group md:hover:bg-transparent md:hover:text-biru rounded-full md:hover:scale-110 transition-transform duration-300">
                 Contact
                 <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-biru transform translate-x-full transition-transform duration-300 group-hover:translate-x-0 md:bg-none"></div>
               </a>
@@ -90,10 +99,10 @@
     <!-- home end -->
 
     <!-- About Start -->
-    <section id="about" class="pt-10 pb-10 bg-hitamPages">
+    <section id="about" class="pb-10 bg-hitamPages">
       <div class="container">
         <div class="flex flex-wrap items-center mx-auto">
-          <div class="mx-auto w-full md:w-1/2 order-2 p-10 sm:p-4 sm:max-w-md">
+          <div class="mx-auto w-full md:w-1/2 order-2 p-10 sm:p-4 bg-hitamBg rounded-xl">
             <h2 class="font-bold uppercase text-biru text-xl">About me</h2>
             <p class="text-base font-semibold mt-4">
               "Saya adalah mahasiswa D3 Teknik Informatika, Universitas Amikom. Di kampus saya mengambil konsentrasi Web Programing. Dalam perjalanan saya sebagai Web Developer, saya sudah mempelajari HTML, CSS, Javascript, dan PHP. Dalam
@@ -106,7 +115,7 @@
               <a href="#about"><i class="fa-brands fa-twitter fa-xl mr-2"></i></a>
             </div>
           </div>
-          <div class="w-full self-center lg:w-1/2 md:w-1/2 order-1">
+          <div class="w-full p-8 self-center lg:w-1/2 md:w-1/2 order-1 drop-shadow-lg">
             <div>
               <img src="public/img/about.jpg" alt="M. Dimas" class="max-w-full mx-auto rounded-xl" />
             </div>
