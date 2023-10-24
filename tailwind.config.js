@@ -2,6 +2,9 @@
 module.exports = {
   content: ['./index.html'],
   theme: {
+    fontFamily: {
+      poppins: ['poppins'],
+    },
     container: {
       center: true,
       padding: '16px',
