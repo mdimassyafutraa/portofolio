@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   </head>
-  <body class="bg-hitamBg text-gray-300 font-poppins">
+  <body class="bg-hitamBg text-gray-400 font-poppins">
     <!-- Header Start -->
     <nav class="absolute top-0 left-0 w-full">
       <!-- Brand -->
@@ -30,12 +30,13 @@
         </a>
         <!-- Mobile Menu Toggle Button -->
         <div class="flex items-center px-4 md:hidden">
-          <button id="humberger" name="humberger" type="button" class="block absolute right-4">
-            <span class="humberger-line transition duration-300 ease-in-out origin-top-left"></span>
-            <span class="humberger-line transition duration-300 ease-in-out"></span>
-            <span class="humberger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+          <button id="humberger" name="humberger" type="button" class="block relative z-10 p-2">
+            <span class="humberger-line transition duration-300 ease-in-out origin-top-left block w-6 h-1 mb-1"></span>
+            <span class="humberger-line transition duration-300 ease-in-out block w-6 h-1 mb-1"></span>
+            <span class="humberger-line transition duration-300 ease-in-out origin-bottom-left block w-6 h-1"></span>
           </button>
         </div>
+
         <!-- Desktop Menu Links -->
         <div id="nav-menu" class="hidden w-full md:block md:w-auto md:mt-0 md:bg-transparent bg-hitamPages bg-opacity-90 rounded-xl overflow-hidden mt-6">
           <ul class="text-center font-medium flex flex-col p-4 md:p-0 mt-4 rounded-xl md:flex-row md:space-x-8 md:mt-0 md:border-0">
