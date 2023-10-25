@@ -17,12 +17,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   </head>
   <body class="bg-hitamBg text-gray-400 font-poppins">
-    <!-- Header Start -->
+    <!-- Header  -->
     <nav class="absolute top-0 left-0 w-full">
       <!-- Brand -->
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" class="flex items-center gap-4 group">
-          <img src="public/img/brand.jpg" alt="" class="rounded-full w-10 transition-transform duration-300 group-hover:scale-110" />
+          <img src="public/img/brand.jpg" alt="" class="rounded-full w-10 transition-transform duration-300 group-hover:scale-110 shadow-lg" />
           <div id="brand" class="group-hover:text-biru">
             <span class="text-md font-semibold whitespace-nowrap md:hidden">MDS</span>
             <span class="text-lg font-semibold whitespace-nowrap hidden md:block">M Dimas Syafutra.</span>
@@ -53,7 +53,7 @@
               </a>
             </li>
             <li>
-              <a href="#" class="block relative p-4 pl-3 pr-4 font-bold overflow-hidden group md:hover:bg-transparent md:hover:text-biru rounded-full md:hover:scale-110 transition-transform duration-300">
+              <a href="#portofolio" class="block relative p-4 pl-3 pr-4 font-bold overflow-hidden group md:hover:bg-transparent md:hover:text-biru rounded-full md:hover:scale-110 transition-transform duration-300">
                 Portofolio
                 <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-biru transform translate-x-full transition-transform duration-300 group-hover:translate-x-0 md:bg-none"></div>
               </a>
@@ -68,9 +68,8 @@
         </div>
       </div>
     </nav>
-    <!-- Header End -->
 
-    <!-- home start -->
+    <!-- home  -->
     <section id="home" class="pt-36 pb-28">
       <div class="container">
         <div class="flex flex-wrap">
@@ -83,7 +82,7 @@
             <p class="font-medium mb-10 leading-relaxed">
               Saya adalah seorang mahasiswa prodi D3 Teknik Informatika, Universitas Amikom Yogyakarta, saat ini saya sedang melaksanakan kegiatan magang di <span class="text-biru">UPT Balai Yasa Lahat.</span>
             </p>
-            <button class="my-6 block relative p-4 pl-3 pr-4 font-semibold overflow-hidden group rounded-full transition-transform duration-300 bg-hitamPages bg-opacity-50">
+            <button class="my-6 block relative p-4 pl-3 pr-4 font-semibold overflow-hidden group rounded-full transition-transform duration-300 border">
               Contact Me
               <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-biru transform translate-x-full transition-transform duration-300 group-hover:translate-x-0"></div>
             </button>
@@ -91,29 +90,28 @@
           <!-- hero -->
           <div class="w-full self-center lg:w-1/2 md:w-1/2">
             <div class="relative mt-10 lg:mt-9 lg:right-0">
-              <img src="public/img/1.jpg" alt="M. Dimas" class="max-w-full mx-auto rounded-full" />
+              <img src="public/img/hero.jpg" alt="M. Dimas" class="max-w-full mx-auto rounded-full shadow-lg" />
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- home end -->
 
-    <!-- About Start -->
+    <!-- About  -->
     <section id="about" class="pb-10 bg-hitamPages">
       <div class="container">
         <div class="flex flex-wrap items-center mx-auto">
-          <div class="mx-auto w-full md:w-1/2 order-2 p-10 sm:p-4 bg-hitamBg rounded-xl">
+          <div class="mx-auto w-full md:w-1/2 order-2 p-10 sm:p-4 bg-hitamBg rounded-xl shadow-lg">
             <h2 class="font-bold uppercase text-biru text-xl">About me</h2>
-            <p class="text-base font-semibold mt-4">
-              "Saya adalah mahasiswa D3 Teknik Informatika, Universitas Amikom. Di kampus saya mengambil konsentrasi Web Programing. Dalam perjalanan saya sebagai Web Developer, saya sudah mempelajari HTML, CSS, Javascript, dan PHP. Dalam
-              proses mendevelop sebuah website, pada saat mendevelop sebuah website, saya menggunakan framework di antaranya, boostrap, tailwind, dan laravel."
+            <p class="text-sm font-semibold mt-4">
+              "Saya adalah mahasiswa D3 Teknik Informatika, Universitas Amikom. Di kampus saya mengambil konsentrasi Web Developer. Dalam perjalanan saya sebagai Web Developer, saya sudah mempelajari HTML, CSS, Javascript, dan PHP. untuk
+              membantu saya dalam mendevelop sebuah website, saya menggunakan framework boostrap, tailwind, dan laravel."
             </p>
             <div class="basis-1/2 mt-4">
-              <a href="https://www.instagram.com/mdimas_25/" target="_blank"><i class="fa-brands fa-instagram fa-xl mr-2"></i></a>
-              <a href="https://github.com/mdimassyafutraa?tab=repositories" target="_blank"><i class="fa-brands fa-github fa-xl mr-2"></i></a>
-              <a href="#about"><i class="fa-brands fa-facebook fa-xl mr-2"></i></a>
-              <a href="#about"><i class="fa-brands fa-twitter fa-xl mr-2"></i></a>
+              <a href="https://www.instagram.com/mdimas_25/" target="_blank"><i class="fa-brands fa-instagram fa-xl mr-2 hover:scale-125 transition duration-300 ease-in-out"></i></a>
+              <a href="https://github.com/mdimassyafutraa?tab=repositories" target="_blank"><i class="fa-brands fa-github fa-xl mr-2 hover:scale-125 transition duration-300 ease-in-out"></i></a>
+              <a href="#about"><i class="fa-brands fa-facebook fa-xl mr-2 hover:scale-125 transition duration-300 ease-in-out"></i></a>
+              <a href="#about"><i class="fa-brands fa-twitter fa-xl mr-2 hover:scale-125 transition duration-300 ease-in-out"></i></a>
             </div>
           </div>
           <div class="w-full p-8 self-center lg:w-1/2 md:w-1/2 order-1 drop-shadow-lg">
@@ -124,7 +122,53 @@
         </div>
       </div>
     </section>
-    <!-- About End -->
+
+    <!-- Portofolio -->
+    <section id="portofolio" class="py-10">
+      <div class="container">
+        <div class="p-10 rounded-xl">
+          <h2 class="font-bold uppercase text-biru text-xl text-center">Portofolio</h2>
+        </div>
+        <div class="flex flex-wrap justify-center">
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3 mb-10">
+            <div class="bg-hitamPages rounded-xl shadow-lg overflow-hidden mb-10 flex flex-col h-full">
+              <img src="public/img/openHouse.png" alt="Open House UPT Balai Yasa Lahat" class="w-full h-64 object-fit" />
+              <div class="py-8 px-6 flex-1">
+                <h3 class="mb-4 text-lg md:text-xl font-bold">Open House UPT Balai Yasa Lahat</h3>
+                <p class="mb-4 text-sm">
+                  Website ini adalah website untuk pendaftaran acara open house di UPT Balai Yasa Lahat, website ini berfungsi untuk membuat form pendaftaran, membuat Qr-code untuk tiketnya, mendata peserta open house, dan dapat mencetaknya
+                  kedalam excel.Teknologi yang saya gunakan dalam develop website ini antaranya <span class="text-biru font-semibold">Boostrap, Javascript, dan Laravel.</span>
+                </p>
+                <a href="https://github.com/mdimassyafutraa/openhouse_upt_balai_yasa_lahat" target="_blank"><i class="fa-brands fa-github fa-xl mr-2 hover:scale-125 transition duration-300 ease-in-out"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3 mb-10">
+            <div class="bg-hitamPages rounded-xl shadow-lg overflow-hidden mb-10 flex flex-col h-full">
+              <img src="public/img/portofolio.png" alt="Open House UPT Balai Yasa Lahat" class="w-full h-64 object-fit" />
+              <div class="py-8 px-6 flex-1">
+                <h3 class="mb-4 text-lg md:text-xl font-bold">Portofolio</h3>
+                <p class="mb-4 text-sm">Website portofolio saya sendiri .Teknologi yang saya gunakan dalam develop website ini antaranya <span class="text-biru font-semibold">Tailwind, Javascript dan laravel.</span></p>
+                <a href="https://github.com/mdimassyafutraa/portofolio" target="_blank"><i class="fa-brands fa-github fa-xl mr-2 hover:scale-125 transition duration-300 ease-in-out"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3 mb-10">
+            <div class="bg-hitamPages rounded-xl shadow-lg overflow-hidden mb-10 flex flex-col h-full">
+              <img src="public/img/Laundry1.png" alt="Open House UPT Balai Yasa Lahat" class="w-full h-64 object-fit" />
+              <div class="py-8 px-6 flex-1">
+                <h3 class="mb-4 text-lg md:text-xl font-bold">Aplikasi Sistem Informasi Jasa Laundry</h3>
+                <p class="mb-4 text-sm">
+                  Website ini adalah berfungsi untuk membuat CRUD sederhana, dimana porject ini adalah project UAS saya.Teknologi yang saya gunakan dalam develop website ini antaranya
+                  <span class="text-biru font-semibold">CSS boostrap, Javascript, dan Laravel.</span>
+                </p>
+                <a href="https://github.com/mdimassyafutraa/UAS-Jasa-Laundry" target="_blank"><i class="fa-brands fa-github fa-xl mr-2 hover:scale-125 transition duration-300 ease-in-out"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="public/script.js"></script>
