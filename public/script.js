@@ -117,3 +117,61 @@ document.addEventListener('DOMContentLoaded', function () {
   // Start animations with a delay
   setTimeout(animateHeading, 1000);
 });
+
+// Botton Top
+
+// Fungsi untuk menunjukkan atau menyembunyikan tombol scroll to top berdasarkan posisi scroll
+function toggleScrollTopButton() {
+  const scrollTopButton = document.getElementById('scrollTopButton');
+  if (window.scrollY > 300) {
+    scrollTopButton.classList.add('active');
+  } else {
+    scrollTopButton.classList.remove('active');
+  }
+}
+
+// Fungsi untuk menggulir halaman ke atas saat tombol scroll to top diklik
+function scrollToTop() {
+  const scrollDuration = 1000; // Durasi pengguliran dalam milidetik
+  const scrollStep = -window.scrollY / (scrollDuration / 15);
+
+  const scrollInterval = setInterval(function () {
+    if (window.scrollY !== 0) {
+      window.scrollBy(0, scrollStep);
+    } else {
+      clearInterval(scrollInterval);
+    }
+  }, 15);
+}
+
+// Event listener untuk tombol scroll to top
+document.getElementById('scrollTopButton').addEventListener('click', scrollToTop);
+
+// Event listener untuk mengonfirmasi perilaku tombol saat menggulir
+window.addEventListener('scroll', toggleScrollTopButton);
+
+// Cek link Aktif
+// Fungsi untuk menentukan apakah tautan harus aktif atau tidak
+function setActiveLink() {
+  var menuItems = document.querySelectorAll('#nav-menu a');
+  menuItems.forEach(function (item) {
+    var targetId = item.getAttribute('href').substring(1);
+    var targetElement = document.getElementById(targetId);
+
+    if (targetElement && isElementInViewport(targetElement)) {
+      item.classList.add('active');
+    } else {
+      item.classList.remove('active');
+    }
+  });
+}
+
+// Fungsi untuk mengecek apakah elemen berada di dalam viewport
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+}
+
+// Panggil setActiveLink saat halaman dimuat dan saat jendela di-scroll
+window.addEventListener('load', setActiveLink);
+window.addEventListener('scroll', setActiveLink);
