@@ -55,3 +55,65 @@ $(document).ready(function () {
     } // End if
   });
 });
+
+// Typing
+document.addEventListener('DOMContentLoaded', function () {
+  const headingElement = document.getElementById('typing-heading');
+  const subheadingElement = document.getElementById('typing-subheading');
+  const paragraphElement = document.getElementById('typing-paragraph');
+  const text = 'Saya adalah seorang mahasiswa prodi D3 Teknik Informatika, Universitas Amikom Yogyakarta, saat ini saya sedang melaksanakan kegiatan magang di UPT Balai Yasa Lahat.';
+  const buttonElement = document.getElementById('typing-button');
+
+  function typeText(text, element, index, speed, callback) {
+    if (index < text.length) {
+      element.innerHTML += text.charAt(index);
+      setTimeout(function () {
+        typeText(text, element, index + 1, speed, callback);
+      }, speed);
+    } else {
+      if (callback) {
+        callback();
+      }
+    }
+  }
+
+  function animateHeading() {
+    headingElement.style.opacity = 1;
+    headingElement.style.transform = 'translateY(0)';
+    // Set a delay for the subheading animation
+    setTimeout(animateSubheading, 1000);
+  }
+
+  function animateSubheading() {
+    subheadingElement.style.opacity = 1;
+    subheadingElement.style.transform = 'translateY(0)';
+    // Set a delay for the paragraph animation
+    setTimeout(function () {
+      typeText(text, paragraphElement, 0, 50, animateButton);
+      animateParagraph();
+    }, 1000);
+  }
+
+  function animateParagraph() {
+    paragraphElement.style.opacity = 1;
+    paragraphElement.style.transform = 'translateY(0)';
+  }
+
+  function animateButton() {
+    buttonElement.style.opacity = 1;
+    buttonElement.style.transform = 'translateY(0)';
+  }
+
+  // Hide elements initially
+  headingElement.style.opacity = 0;
+  headingElement.style.transform = 'translateY(20px)';
+  subheadingElement.style.opacity = 0;
+  subheadingElement.style.transform = 'translateY(20px)';
+  paragraphElement.style.opacity = 0;
+  paragraphElement.style.transform = 'translateY(20px)';
+  buttonElement.style.opacity = 0;
+  buttonElement.style.transform = 'translateY(20px)';
+
+  // Start animations with a delay
+  setTimeout(animateHeading, 1000);
+});

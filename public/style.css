@@ -22,3 +22,26 @@
 .humberger-active > span:nth-child(3) {
   @apply -rotate-45;
 }
+
+#typing-subheading,
+#typing-paragraph {
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+#typing-subheading,
+#typing-paragraph {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+#typing-heading {
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(20px);
+}
+
+#typing-button {
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(20px);
+}
