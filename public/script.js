@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const headingElement = document.getElementById('typing-heading');
   const subheadingElement = document.getElementById('typing-subheading');
   const paragraphElement = document.getElementById('typing-paragraph');
-  const text = 'Saya adalah seorang mahasiswa prodi D3 Teknik Informatika, Universitas Amikom Yogyakarta, saat ini saya sedang melaksanakan kegiatan magang di UPT Balai Yasa Lahat.';
+  const text = 'I am a student majoring in D3 Informatics Engineering at Amikom University Yogyakarta. Currently, I am doing an internship at UPT Balai Yasa Lahat.';
   const buttonElement = document.getElementById('typing-button');
 
   function typeText(text, element, index, speed, callback) {
