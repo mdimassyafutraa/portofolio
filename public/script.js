@@ -175,3 +175,52 @@ function isElementInViewport(el) {
 // Panggil setActiveLink saat halaman dimuat dan saat jendela di-scroll
 window.addEventListener('load', setActiveLink);
 window.addEventListener('scroll', setActiveLink);
+
+// fungsi form contact
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxdphPJNoZv_WGnpj_D-pDTRf9gff2BzC0qBs-grAqPg7bhjxOP2KWmI2F071AXrSfkSw/exec';
+const form = document.forms['mdimassyafutra_contact_form'];
+const btnSend = document.querySelector('.btn-send');
+const btnLoading = document.querySelector('.btn-load');
+const myAlert = document.querySelector('.my-alert');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  // Show loading button and hide submit button
+  btnLoading.classList.toggle('hidden');
+  btnSend.classList.toggle('hidden');
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then((response) => {
+      // Hide loading button, show submit button
+      btnLoading.classList.toggle('hidden');
+      btnSend.classList.toggle('hidden');
+
+      return response.json(); // Parse the response as JSON (if applicable)
+    })
+    .then((data) => {
+      // Show the alert indicating success
+      myAlert.classList.remove('hidden');
+      myAlert.innerText = 'Message sent successfully';
+
+      form.reset();
+
+      console.log('Success!', data);
+
+      // Hide the alert after 3 seconds (3000 milliseconds)
+      setTimeout(() => {
+        myAlert.classList.add('hidden');
+      }, 3000);
+    })
+    .catch((error) => {
+      // Handle errors and show an error message
+      console.error('Error!', error.message);
+      myAlert.classList.remove('hidden');
+      myAlert.innerText = 'An error occurred. Please try again later.';
+
+      // Hide the error alert after 3 seconds (3000 milliseconds)
+      setTimeout(() => {
+        myAlert.classList.add('hidden');
+      }, 3000);
+    });
+});
