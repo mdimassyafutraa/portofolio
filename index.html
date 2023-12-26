@@ -11,6 +11,9 @@
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 
+    <!-- Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +24,7 @@
     <nav class="absolute top-0 left-0 w-full">
       <!-- Brand -->
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" class="flex items-center gap-4 group">
+        <a href="#home" class="flex items-center gap-4 group">
           <img src="public/img/brand.jpg" alt="" class="rounded-full w-10 transition-transform duration-300 group-hover:scale-110 shadow-lg" />
           <div id="brand" class="group-hover:text-biru">
             <span class="text-md font-semibold whitespace-nowrap md:hidden">MDS</span>
@@ -42,26 +45,25 @@
           <ul class="text-center font-medium flex flex-col p-4 md:p-0 mt-4 rounded-xl md:flex-row md:space-x-8 md:mt-0 md:border-0">
             <li>
               <a href="#home" class="block relative p-4 pl-3 pr-4 font-bold overflow-hidden group md:hover:bg-transparent rounded-full md:hover:scale-110 transition-transform duration-300">
-                Home
+                Beranda
                 <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-biru transform translate-x-full transition-transform duration-300 group-hover:translate-x-0 md:bg-none"></div>
               </a>
             </li>
-
             <li>
               <a href="#about" class="block relative p-4 pl-3 pr-4 font-bold overflow-hidden group md:hover:bg-transparent rounded-full md:hover:scale-110 transition-transform duration-300">
-                About
+                Tentang
                 <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-biru transform translate-x-full transition-transform duration-300 group-hover:translate-x-0 md:bg-none"></div>
               </a>
             </li>
             <li>
               <a href="#portfolio" class="block relative p-4 pl-3 pr-4 font-bold overflow-hidden group md:hover:bg-transparent rounded-full md:hover:scale-110 transition-transform duration-300">
-                Portfolio
+                Portofolio
                 <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-biru transform translate-x-full transition-transform duration-300 group-hover:translate-x-0 md:bg-none"></div>
               </a>
             </li>
             <li>
               <a href="#contact" class="block relative p-4 pl-3 pr-4 font-bold overflow-hidden group md:hover:bg-transparent rounded-full md:hover:scale-110 transition-transform duration-300">
-                Contact
+                Kontak
                 <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-biru transform translate-x-full transition-transform duration-300 group-hover:translate-x-0 md:bg-none"></div>
               </a>
             </li>
@@ -78,7 +80,7 @@
         <div class="container">
           <div class="flex flex-wrap flex-row md:py-20 px-2 items-center">
             <div class="w-full self-center lg:w-1/2 px-4 md:w-1/2">
-              <h2 id="typing-heading" class="text-base font-semibold">Hai, 🙋 my name is.</h2>
+              <h2 id="typing-heading" class="text-base font-semibold">Hai, 🙋 nama saya.</h2>
               <h3 class="font-bold text-2xl md:text-4xl mb-2" id="typing-subheading">
                 <span class="text-biru md:text-2xl lg:text-3xl">M. Dimas</span>
                 <span class="md:text-2xl lg:text-3xl">Syafutra</span>
@@ -86,7 +88,7 @@
               <p class="font-medium mb-10 leading-relaxed md:text-sm lg:text-base" id="typing-paragraph">
                 <span id="typing-text"></span>
               </p>
-              <a href="#contact" id="typing-button" class="font-bold text-sm px-4 py-2 bg-biru hover:opacity-90 rounded-full">Contact Me</a>
+              <a href="#contact" id="typing-button" class="font-bold text-sm px-4 py-2 bg-biru hover:opacity-90 rounded-full">Kontak Saya</a>
             </div>
             <!-- hero -->
             <div class="w-full self-center lg:w-1/2 md:w-1/2">
@@ -99,21 +101,32 @@
       </section>
 
       <!-- About  -->
-      <section id="about" class="md:h-screen flex items-center justify-center md:p-0 py-10 bg-hitamPages px-4">
+      <section id="about" class="md:h-screen flex items-center justify-center md:p-0 py-10 bg-hitamPages px-4 overflow-hidden">
         <div class="container p-0">
           <div class="flex flex-wrap items-center mx-auto">
-            <div class="mx-auto w-full md:w-1/2 order-2 p-10 sm:p-4 mt-4 md:mt-0 bg-hitamBg rounded-xl hover:shadow-lg transition duration-300">
-              <h2 class="font-bold uppercase text-biru text-xl">About me</h2>
-              <p class="text-sm font-semibold mt-4">
-                "I am a D3 student majoring in Informatics Engineering at Amikom University Yogyakarta. At my campus, I specialize in Web Development. During my time at the campus, I have already studied HTML, CSS, Javascript, and PHP. To
-                assist me in developing a website, I typically use frameworks, including <span class="text-biru font-bold">Bootstrap, Tailwind, and Laravel.</span>"
+            <div
+              class="mx-auto w-full md:w-1/2 order-2 p-10 sm:p-4 mt-4 md:mt-0 bg-hitamBg rounded-xl hover:shadow-lg transition duration-300"
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+            >
+              <h2 class="font-bold uppercase text-biru text-xl">Tentang Saya</h2>
+              <p class="text-xs md:text-sm font-semibold mt-4">
+                Saya seorang mahasiswa D3 di bidang Teknik Informatika di Universitas Amikom Yogyakarta yang sangat tertarik dengan pengembangan web. Saya telah menjelajahi dan mempelajari HTML, CSS, Javascript, dan PHP untuk menciptakan
+                beragam situs web. Saat bekerja, saya sering menggunakan berbagai kerangka kerja (framework) untuk membuat proses pengembangan lebih efisien dan hasilnya lebih menarik.
+                <span class="text-biru font-bold">Bootstrap, Tailwind, and Laravel.</span>"
               </p>
               <div class="basis-1/2 mt-4">
                 <a href="https://www.instagram.com/_mdimas.s/" target="_blank"><i class="fa-brands fa-instagram fa-xl mr-2 hover:scale-125 transition duration-300 ease-in-out hover:text-red-700"></i></a>
                 <a href="https://github.com/mdimassyafutraa?tab=repositories" target="_blank"><i class="fa-brands fa-github fa-xl mr-2 hover:scale-125 transition duration-300 ease-in-out hover:text-hitamPages"></i></a>
+                <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=mdimassyafutra10@gmail.com" target="_blank" class="hover:text-white text-sm"><i class="fas fa-envelope fa-xl"></i></a>
               </div>
             </div>
-            <div class="w-full self-center lg:w-1/2 md:w-1/2 order-1">
+            <div class="w-full self-center lg:w-1/2 md:w-1/2 order-1" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true">
               <div>
                 <img src="public/img/about.jpg" alt="M. Dimas" class="max-w-full w-full md:w-auto mx-auto rounded-3xl hover:shadow-lg transition duration-300" />
               </div>
@@ -126,47 +139,74 @@
       <section id="portfolio" class="flex items-center justify-center">
         <div class="container">
           <div class="p-10 rounded-xl">
-            <h2 class="font-bold uppercase text-biru text-xl text-center">Portfolio</h2>
+            <h2 class="font-bold uppercase text-biru text-xl text-center">Portofolio</h2>
           </div>
           <div class="flex flex-wrap justify-center">
-            <!-- Card -->
-            <div class="w-full lg:w-1/2 md:px-4 xl:w-1/3 mb-10">
-              <div class="bg-hitamPages rounded-xl shadow-xl overflow-hidden mb-10 md:mb-0 flex flex-col h-full">
-                <img src="public/img/openHouse.png" alt="Open House UPT Balai Yasa Lahat" class="w-full h-64 object-center" />
+            <!-- Open House -->
+            <div class="w-full lg:w-1/2 md:px-4 xl:w-1/3 mb-10" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="ture">
+              <div class="bg-hitamPages rounded-xl shadow-lg shadow-slate-800 overflow-hidden mb-10 md:mb-0 flex flex-col h-full">
+                <img src="public/img/openHouse/1.png" alt="Open House UPT Balai Yasa Lahat" class="w-full h-64 bg-cover bg-center" />
                 <div class="pt-8 md:pb-4 px-6 flex-1">
                   <h3 class="mb-4 text-lg md:text-xl font-bold hover:text-biru cursor-pointer">Open House UPT Balai Yasa Lahat</h3>
-                  <p class="mb-4 text-sm">
-                    "The website used for open house event registration at UPT Balai Yasa Lahat features a registration form, the generation of QR codes for registered participants' tickets, participant quota management, QR code scanning,
-                    and a feature to view participant data and archive it using Excel. <br />
-                    <span class="text-biru font-semibold">Bootstrap, Javascript, and Laravel.</span>"
+                  <p class="mb-4 text-xs md:text-sm">
+                    "Website yang digunakan untuk pendaftaran acara open house di UPT Balai Yasa Lahat memiliki formulir pendaftaran, pembuatan kode QR untuk tiket peserta yang terdaftar, manajemen kuota peserta, pemindaian kode QR, dan
+                    fitur untuk melihat data peserta serta menyimpannya dalam format Excel."
                   </p>
+                  <div class="my-4 text-biru font-semibold">
+                    <span><i class="fa-solid fa-gear"></i></span>
+                    <span>Bootstrap, Javascript, Laravel.</span>
+                  </div>
                   <a href="https://github.com/mdimassyafutraa/openhouse_upt_balai_yasa_lahat" target="_blank"><i class="fa-brands fa-github fa-xl mr-2 hover:scale-125 transition duration-300 ease-in-out hover:text-hitamBg"></i></a>
                 </div>
               </div>
             </div>
-            <div class="w-full lg:w-1/2 md:px-4 xl:w-1/3 mb-10">
-              <div class="bg-hitamPages rounded-xl shadow-xl overflow-hidden mb-10 flex flex-col h-full">
-                <img src="public/img/portofolio.png" alt="Open House UPT Balai Yasa Lahat" class="w-full h-64 object-center" />
-                <div class="py-8 px-6 flex-1">
-                  <h3 class="mb-4 text-lg md:text-xl font-bold hover:text-biru cursor-pointer">Portfolio</h3>
-                  <p class="mb-4 text-sm">
-                    Website portofolio .
-                    <span class="text-biru font-semibold">HTML, Tailwind dan Javascript</span>
-                  </p>
-                  <a href="https://github.com/mdimassyafutraa/portfolio" target="_blank"><i class="fa-brands fa-github fa-xl mr-2 hover:scale-125 transition duration-300 ease-in-out hover:text-hitamBg"></i></a>
+            <!-- web Portofolio -->
+            <div class="w-full lg:w-1/2 md:px-4 xl:w-1/3 mb-10" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true">
+              <div class="bg-hitamPages rounded-xl shadow-lg shadow-slate-800 overflow-hidden mb-10 md:mb-0 flex flex-col h-full">
+                <img src="public/img/portofolio/1.png" alt="Open House UPT Balai Yasa Lahat" class="w-full h-64 bg-cover bg-center" />
+                <div class="pt-8 md:pb-4 px-6 flex-1">
+                  <h3 class="mb-4 text-lg md:text-xl font-bold hover:text-biru cursor-pointer">Portofolio</h3>
+                  <div class="my-4 text-biru font-semibold">
+                    <span><i class="fa-solid fa-gear"></i></span>
+                    <span>HTML, CSS Tailwind, Javascript.</span>
+                  </div>
+                  <a href="https://github.com/mdimassyafutraa/portofolio" target="_blank"><i class="fa-brands fa-github fa-xl mr-2 hover:scale-125 transition duration-300 ease-in-out hover:text-hitamBg"></i></a>
                 </div>
               </div>
             </div>
-            <div class="w-full lg:w-1/2 md:px-4 xl:w-1/3 mb-10">
-              <div class="bg-hitamPages rounded-xl shadow-xl overflow-hidden mb-10 flex flex-col h-full">
-                <img src="public/img/Laundry1.png" alt="Open House UPT Balai Yasa Lahat" class="w-full h-64 object-center" />
-                <div class="py-8 px-6 flex-1">
-                  <h3 class="mb-4 text-lg md:text-xl font-bold hover:text-biru cursor-pointer">Sistem Informasi Laundry</h3>
-                  <p class="mb-4 text-sm">
-                    Final Project, a web-based Laundry Service Information System Application <br />
-                    <span class="text-biru font-semibold">Bootstrap, JavaScript, and Laravel.</span>
+            <!-- Buku Tamu -->
+            <div class="w-full lg:w-1/2 md:px-4 xl:w-1/3 mb-10" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true">
+              <div class="bg-hitamPages rounded-xl shadow-lg shadow-slate-800 overflow-hidden mb-10 md:mb-0 flex flex-col h-full">
+                <img src="public/img/bukutamu/1.png" alt="" class="w-full h-64 bg-cover bg-center" />
+                <div class="pt-8 md:pb-4 px-6 flex-1">
+                  <h3 class="mb-4 text-lg md:text-xl font-bold hover:text-biru cursor-pointer">Buku Tamu UPT Balai Yasa Lahat</h3>
+                  <p class="mb-4 text-xs md:text-sm">
+                    Situs web yang saya bangun adalah platform pencatatan tamu yang menawarkan kemudahan dalam mencatat kedatangan tamu ke UPT Balai Yasa Lahat. Dengan fitur-fitur seperti input data tamu, pembuatan QR code, pemindaian QR
+                    code, pencatatan tamu dalam file Excel, serta visualisasi jumlah tamu per hari, minggu, dan bulan, website ini memberikan solusi lengkap untuk manajemen kedatangan tamu yang efisien dan terorganisir.
                   </p>
-                  <a href="https://github.com/mdimassyafutraa/UAS-Jasa-Laundry" target="_blank"><i class="fa-brands fa-github fa-xl mr-2 hover:scale-125 transition duration-300 ease-in-out hover:text-hitamBg"></i></a>
+                  <div class="my-4 text-biru font-semibold">
+                    <span><i class="fa-solid fa-gear"></i> </span>
+                    <span>HTML, CSS Tailwind, Laravel, Javascript.</span>
+                  </div>
+                  <a href="https://github.com/mdimassyafutraa/Buku-Tamu-Balai-Yasa-Lahat" target="_blank"><i class="fa-brands fa-github fa-xl mr-2 hover:scale-125 transition duration-300 ease-in-out hover:text-hitamBg"></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- Sewa Gedung kesenian -->
+            <div class="w-full lg:w-1/2 md:px-4 xl:w-1/3 mb-10" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="true">
+              <div class="bg-hitamPages rounded-xl shadow-lg shadow-slate-800 overflow-hidden mb-10 md:mb-0 flex flex-col h-full">
+                <img src="public/img/sewagedung/1.png" class="w-full h-64 bg-cover bg-center" />
+                <div class="pt-8 md:pb-4 px-6 flex-1">
+                  <h3 class="mb-4 text-lg md:text-xl font-bold hover:text-biru cursor-pointer">Website Penyewaan Gedung</h3>
+                  <p class="mb-4 text-xs md:text-sm">
+                    Situs ini merupakan platform penyewaan gedung seni yang menyediakan kemudahan dalam pemesanan. Dengan fitur input data peminjam serta kalender jadwal, pengguna dapat dengan mudah memasukkan informasi pemesanan mereka dan
+                    melihat ketersediaan jadwal sewa gedung secara real-time. Dengan demikian, situs ini menjadi sarana praktis bagi peminjam dalam merencanakan acara mereka dengan tepat waktu.
+                  </p>
+                  <div class="my-4 text-biru font-semibold">
+                    <span><i class="fa-solid fa-gear"></i> </span>
+                    <span>HTML, CSS Tailwind, Laravel, Javascript.</span>
+                  </div>
+                  <a href="https://github.com/mdimassyafutraa/Dinas-Kebudayaan-Sleman" target="_blank"><i class="fa-brands fa-github fa-xl mr-2 hover:scale-125 transition duration-300 ease-in-out hover:text-hitamBg"></i></a>
                 </div>
               </div>
             </div>
@@ -178,26 +218,26 @@
       <section id="contact" class="p-10 flex items-center justify-center md:p-0 bg-hitamPages h-screen">
         <div class="container">
           <div class="p-10">
-            <h2 class="font-bold uppercase text-biru text-xl text-center">Contact me</h2>
+            <h2 class="font-bold uppercase text-biru text-xl text-center">Kontak Saya</h2>
           </div>
           <!-- alert -->
           <div id="alert-1" class="my-alert w-full lg:w-2/3 lg:mx-auto hidden items-center p-4 mb-4 text-biru rounded-lg bg-hitamBg border border-biru" role="alert"></div>
           <form action="" name="mdimassyafutra_contact_form">
             <div class="w-full lg:w-2/3 lg:mx-auto">
-              <div class="w-full px-4 mb-8">
-                <label for="name" class="text-base font-bold">Name</label>
+              <div class="w-full px-4 mb-8" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="ture">
+                <label for="name" class="text-base font-bold">Nama</label>
                 <input type="text" id="name" name="name" class="w-full bg-hitamBg p-3 rounded-md focus:outline-none focus:ring-biru focus:ring-1 focus:border-biru shadow-lg" />
               </div>
-              <div class="w-full px-4 mb-8">
+              <div class="w-full px-4 mb-8" data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="ture">
                 <label for="email" class="text-base font-bold">Email</label>
                 <input type="email" id="email" name="email" class="w-full bg-hitamBg p-3 rounded-md focus:outline-none focus:ring-biru focus:ring-1 focus:border-biru shadow-lg" />
               </div>
-              <div class="w-full px-4 mb-8">
-                <label for="pesan" class="text-base font-bold">Message</label>
+              <div class="w-full px-4 mb-8" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="ture">
+                <label for="pesan" class="text-base font-bold">Pesan</label>
                 <textarea type="text" id="pesan" name="message" class="w-full bg-hitamBg p-3 rounded-md focus:outline-none focus:ring-biru focus:ring-1 focus:border-biru h-36 shadow-lg"></textarea>
               </div>
-              <div class="w-full">
-                <button type="submit" class="btn-send text-base font-semibold bg-biru py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-300">Send</button>
+              <div class="w-full" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="ture">
+                <button type="submit" class="btn-send text-base font-semibold bg-biru py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-300">Kirim</button>
                 <!-- btn Load -->
                 <button
                   disabled
@@ -214,7 +254,7 @@
                       fill="currentColor"
                     />
                   </svg>
-                  Sending...
+                  Mengirim...
                 </button>
               </div>
             </div>
@@ -229,15 +269,15 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-bold text-2xl mb-5 text-biru">Contact Me</h3>
+            <h3 class="font-bold text-2xl mb-5 text-biru">Kontak Saya</h3>
             <p class="text-sm mb-2 font-bold">mdimassyafutra10@gmail.com</p>
             <p class="text-sm"><i class="fa-solid fa-location-dot"></i> Muara Enim, Sumatera Selatan.</p>
           </div>
           <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-2xl mb-5 text-biru">Social media</h3>
+            <h3 class="font-semibold text-2xl mb-5 text-biru">Sosial media</h3>
             <ul>
               <li class="mb-4">
-                <a href="https://www.instagram.com/_mdimas.s/" target="_blank" class="hover:text-white text-sm"> <i class="fa-brands fa-instagram fa-xl"></i> @m_mdimas.s</a>
+                <a href="https://www.instagram.com/_mdimas.s/" target="_blank" class="hover:text-white text-sm"> <i class="fa-brands fa-instagram fa-xl"></i> @_mdimas.s</a>
               </li>
               <li class="mb-4">
                 <a href="https://github.com/mdimassyafutraa?tab=repositories" target="_blank" class="hover:text-white text-sm"><i class="fa-brands fa-github fa-xl"></i> mdimassyafutraa</a>
@@ -251,22 +291,22 @@
             <h3 class="font-semibold text-2xl mb-5 text-biru">Link</h3>
             <ul class="mb-2">
               <li>
-                <a href="#home" class="inline-block text-sm hover:text-biru mb-3">Home</a>
+                <a href="#home" class="inline-block text-sm hover:text-biru mb-3">Beranda</a>
               </li>
               <li>
-                <a href="#about" class="inline-block text-sm hover:text-biru mb-3">About</a>
+                <a href="#about" class="inline-block text-sm hover:text-biru mb-3">Tentang</a>
               </li>
               <li>
-                <a href="#portfolio" class="inline-block text-sm hover:text-biru mb-3">Portfolio</a>
+                <a href="#portfolio" class="inline-block text-sm hover:text-biru mb-3">Portofolio</a>
               </li>
               <li>
-                <a href="#contact" class="inline-block text-sm hover:text-biru mb-3">Contact</a>
+                <a href="#contact" class="inline-block text-sm hover:text-biru mb-3">Kontak</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="w-full pt-10 border-t border-biru text-center">
-          <h3>Copyright © 2023 mdimassyafutra. All Rights Reserved</h3>
+          <h3 class="text-xs md:sm">Copyright © 2023 mdimassyafutra. All Rights Reserved</h3>
         </div>
       </div>
     </footer>
@@ -276,6 +316,12 @@
     <button id="scrollTopButton" class="fixed bottom-4 right-4 bg-hitamBg hover:bg-biru text-white text-xl w-10 h-10 rounded-full shadow-lg flex items-center justify-center cursor-pointer" title="Scroll to Top">
       <i class="fa-solid fa-arrow-up"></i>
     </button>
+
+    <!-- scrol -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="public/script.js"></script>

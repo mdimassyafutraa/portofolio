@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const headingElement = document.getElementById('typing-heading');
   const subheadingElement = document.getElementById('typing-subheading');
   const paragraphElement = document.getElementById('typing-paragraph');
-  const text = 'I am a student majoring in D3 Informatics Engineering at Amikom University Yogyakarta. Currently, I am doing an internship at UPT Balai Yasa Lahat.';
+  const text =
+    'Sebagai mahasiswa Teknik Informatika dan web developer, portofolio ini adalah jejak perjalanan saya dalam menggabungkan pengetahuan akademis dengan keterampilan praktis dalam menciptakan situs web yang fungsional dan menarik.';
   const buttonElement = document.getElementById('typing-button');
 
   function typeText(text, element, index, speed, callback) {
